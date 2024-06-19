@@ -1,0 +1,465 @@
+.swiper-container {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide {
+    background-color: purple;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.pink {
+    background-color: pink;
+}
+
+/*----------*/
+.demo-one {
+    border: 1px solid red;
+    display: flex;
+}
+
+.demo-one .img-card {
+    display: flex;
+}
+
+.demo-one .img-card img {
+    width: 400px;
+}
+
+.static-card img {
+    width: 400px;
+    border: 1px solid red;
+}
+
+.col-md-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo-one {
+    display: flex;
+}
+
+.img-card,
+.static-card {
+    position: relative;
+    cursor: pointer;
+}
+
+.card-inside,
+.static-inside {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.img-card:hover .card-inside {
+    display: block;
+}
+
+.static-card:hover .static-inside {
+    display: block;
+}
+
+.thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+/*------*/
+
+.parent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.child-one {
+    display: block;
+    border: 1px solid red;
+    position: absolute;
+    top: 120px;
+    left: 60px;
+    cursor: pointer;
+}
+
+.child-two {
+    display: block;
+    border: 1px solid red;
+    position: absolute;
+    top: 120px;
+    left: 500px;
+    cursor: pointer;
+}
+
+.child-three {
+    display: block;
+    border: 1px solid red;
+    position: absolute;
+    top: 450px;
+    left: 500px;
+    cursor: pointer;
+}
+
+.child-four {
+    display: block;
+    position: absolute;
+    top: 450px;
+    left: 50px;
+    cursor: pointer;
+}
+
+.parent-one.sss {
+    z-index: -1;
+    position: absolute;
+}
+
+.parent-one.sss img {
+    border: 2px solid blue;
+}
+
+.game-development-work .game-development {
+    border: 1px solid red;
+    width: 100%;
+}
+
+.child {
+    overflow: initial;
+}
+
+/*-------slic page ------*/
+.container {
+    min-width: 1200px;
+}
+
+.videoSection {
+    margin-top: 100px;
+}
+.frame-img{
+
+}
+.portfolio-parent{
+
+}
+.videoSection .backSlide {
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    width: 100%;
+    height: 760px;
+    margin: auto;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width: 767px) {
+    .videoSection .backSlide {
+        height: initial;
+    }
+}
+
+.videoSection .backSlide:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(9px);
+    -webkit-filter: blur(9px);
+    background-color: rgba(14, 19, 76, 0.9);
+    z-index: -1;
+}
+
+.videoSection .imageStyle {
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.videoSection .firstSlide {
+    position: absolute;
+    left: 6%;
+    top: 12%;
+}
+
+.videoSection .secondSlide {
+    position: absolute;
+    right: 11%;
+    top: 7%;
+}
+
+.videoSection .thirdSlide {
+    position: absolute;
+    right: 6%;
+    top: 52%;
+}
+
+.videoSection .fourthSlide {
+    position: absolute;
+    left: 11%;
+    top: 54%;
+}
+
+.videoSection .slides {
+    position: absolute;
+    z-index: 2;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    transition: 0.4s all ease-in;
+    aspect-ratio: auto 485/286;
+    max-width: 100%;
+    width: 485px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoSection .slides .imageStyle {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.videoSection .middleSlide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #FFF;
+}
+
+.videoSection .middleSlide .forPlay {
+    width: 100%;
+}
+.videoSection .middleSlide .forPlay .playVideo {
+    position: absolute;
+    outline: none;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+    height: 70px;
+    width: 70px;
+    background-color: rgba(255, 255, 255, 0.25);
+    transition: 0.4s all ease-in;
+}
+
+
+.videoSection .middleSlide .forPlay .playVideo:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.videoSection .middleSlide .forPlay .playVideo .play-icon {
+    aspect-ratio: auto 60/60;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    border: 5px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    transition: 0.4s all ease-in;
+}
+
+
+.videoSection .middleSlide .forPlay .playVideo .play-icon:hover {
+    border: 5px solid white;
+    transition: 0.4s all ease-in;
+}
+
+.videoSection .playVideo {
+    z-index: 2;
+}
+
+/*
+
+.playVideo {
+    position: absolute;
+    outline: none;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+    height: 70px;
+    width: 70px;
+    background-color: rgba(255, 255, 255, 0.25);
+    transition: 0.4s all ease-in;
+}
+
+
+.playVideo:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.playVideo .play-icon {
+    aspect-ratio: auto 60/60;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    border: 5px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    transition: 0.4s all ease-in;
+}
+
+
+.playVideo .play-icon:hover {
+    border: 5px solid white;
+    transition: 0.4s all ease-in;
+}
+
+.playVideo {
+    z-index: 2;
+}*/
+
+.videoSection .videoPlayer {
+    display: none;
+    position: relative;
+    z-index: 1;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.videoSection .videoPlayer .closeVideo {
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 2;
+    width: 30px;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.videoSection .videoPlayer .closeVideo .close-icon {
+    aspect-ratio: auto 40/40;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+}
+
+.videoSection .videoPlayer video {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+/*
+@media only screen and (max-width: 1199px) {
+    .firstSlide, .secondSlide, .thirdSlide, .fourthSlide, .middleSlide {
+        left: initial !important;
+        right: initial !important;
+        top: initial !important;
+    }
+}*/
+
+
+@media only screen and (max-width: 1199px) {
+    .videoSection .slides{
+        position: initial;
+    }
+    .videoSection .firstSlide,
+    .videoSection .secondSlide,
+    .videoSection .thirdSlide,
+    .videoSection .middleSlide,
+    .videoSection .fourthSlide {
+        position: initial;
+        transform: initial;
+    }
+    .videoSection .slides .imageStyle{
+        max-width: 100%;
+        position: initial;
+        transform: none;
+    }
+    .portfolio-parent{
+        display: flex;
+        overflow: auto;
+        white-space: nowrap;
+        /*width: calc(100% - 30px);*/
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: initial;
+
+        /*top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);*/
+    }
+
+    .videoSection .slides{
+        min-width: 45%;
+        margin-right: 15px;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 1199px) {
+    .playVideo {
+        position: absolute;
+    }
+}
+
+
+.playVideo{
+    position: absolute;
+    outline: none;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+    height: 70px;
+    width: 70px;
+    background-color: rgba(255, 255, 255, 0.25);
+    transition: 0.4s all ease-in;
+}
+.playVideo .play-icon {
+    aspect-ratio: auto 60/60;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    border: 5px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    transition: 0.4s all ease-in;
+}
